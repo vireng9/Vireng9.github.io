@@ -5,45 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viren Ghaghada | Quant Portfolio</title>
   <style>
+    /* Global Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
       background: #f9f9f9; color: #333;
+      line-height: 1.6;
     }
+
+    /* Header */
     header {
-      background: lightgrey;   /* header background changed to light grey */
-      color: #333;
+      background: #f2f2f2;   /* very light grey */
       padding: 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
     }
     header h1 {
       margin: 0;
-      color: darkblue;         /* name in dark blue */
+      color: darkblue;       /* name in dark blue */
+      font-size: 2rem;
     }
     nav {
-      margin-top: 10px;        /* space between name and contact details */
+      margin-top: 10px;
     }
     nav a {
-      color: darkgreen;        /* contact details in navy green */
+      color: darkgreen;      /* contact details in navy green */
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease, transform 0.2s ease;
     }
+    nav a:hover {
+      color: #006400;        /* darker green on hover */
+      transform: scale(1.05);
+    }
+
+    /* Sections */
     section {
-      padding: 20px; max-width: 900px; margin: auto;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
-      color: red;              /* section headings in red */
+      color: red;            /* section headings in red */
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
-      margin-top: 20px;        /* reduced spacing between sections */
+      margin-top: 20px;
     }
     .project {
       margin-bottom: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* subtle card shadow */
     }
+    .project h3 {
+      margin-top: 0;
+    }
+
+    /* Footer */
     footer {
-      background: #1a1a1a; color: #fff;
-      text-align: center; padding: 15px;
+      background: #f2f2f2;   /* very light grey */
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* subtle shadow at top */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+      section {
+        padding: 20px 10px;
+      }
     }
   </style>
 </head>
