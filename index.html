@@ -12,6 +12,7 @@
       border: 1.5cm solid black; /* dark black border */
       font-family: "Segoe UI", Arial, sans-serif;
       background-color: #fdfdfd;
+      color: #333;
     }
 
     /* Header styling */
@@ -23,7 +24,7 @@
     /* Name styling */
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
       color: #000080; /* dark navy blue */
       font-weight: 700;
     }
@@ -39,6 +40,13 @@
       font-weight: bold; /* bold links */
       margin: 0 12px;
       font-size: 1.05em;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    /* Hover effect */
+    header nav a:hover {
+      color: #004d33;       /* darker green on hover */
+      text-decoration: underline; /* underline on hover */
     }
 
     /* Dark red line below links */
@@ -50,22 +58,63 @@
 
     /* Main content styling */
     main {
-      padding: 20px;
-      text-align: center;
+      padding: 20px 40px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
     }
 
     main h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      color: #333;
+      font-size: 1.6em;
+      margin-top: 20px;
+      color: #222;
     }
 
     main p {
       font-size: 1.1em;
-      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Featured Projects Section */
+    .projects {
+      margin-top: 30px;
+    }
+
+    .projects h3 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .project {
+      margin-bottom: 25px;
+      background: #fafafa;
+      padding: 15px;
+      border-left: 4px solid #000080; /* accent line */
+      border-radius: 6px;
+    }
+
+    .project h4 {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+      color: #000080;
+    }
+
+    .project ul {
+      margin: 5px 0 0 20px;
+      padding: 0;
+    }
+
+    .project ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
       color: #555;
-      max-width: 600px;
-      margin: 0 auto;
     }
   </style>
 </head>
@@ -82,11 +131,59 @@
   </header>
 
   <main>
-    <h2>Welcome to My Portfolio</h2>
+    <h2>My Portfolio</h2>
     <p>
-      Explore my work, projects, and professional journey. This portfolio showcases my skills,
-      achievements, and creative endeavors in a polished and professional format.
+      A keen learner and passionate about quantitative finance — trading, portfolio risk management, optimization, market microstructure, latency, and AI/ML applications.  
+      Leveraging quant and statistical tools to design trading strategies, risk solutions, and solve complex problems.
     </p>
+    <p>
+      This demonstrates curiosity, analytical ability, critical thinking, adaptability, and cross-disciplinary application — essential to solving complex problems and driving excellence.  
+      <strong>Note:</strong> For project details, visit GitHub repositories.
+    </p>
+
+    <div class="projects">
+      <h3>📂 Featured Quant Projects</h3>
+
+      <div class="project">
+        <h4>📈 GJR–GARCH Volatility Modelling (OOP)</h4>
+        <p>
+          Implemented the Glosten–Jagannathan–Runkle GARCH model to capture asymmetric volatility effects in financial time series. Designed using Object-Oriented Programming principles for modularity, scalability, and reusability.
+        </p>
+        <ul>
+          <li>Quantitative finance & econometrics</li>
+          <li>Python programming (OOP design patterns)</li>
+          <li>Time series analysis & risk modelling</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h4>📊 Bollinger Band Function (OOP)</h4>
+        <p>
+          Developed a reusable Bollinger Band function using Object-Oriented Programming. Designed to support dynamic parameterization and integration into trading strategy frameworks.
+        </p>
+        <ul>
+          <li>Technical analysis & trading strategy design</li>
+          <li>Python programming (OOP principles)</li>
+          <li>Data visualization & financial analytics</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h4>📉 Basis Trade with Repo Financing</h4>
+        <p>
+          Designed and implemented a quantitative framework to exploit basis trading opportunities between cash bonds and futures, financed through repurchase (repo) agreements. The project integrates fixed-income pricing, repo market dynamics, and arbitrage strategy design to optimize returns under funding constraints.
+        </p>
+        <ul>
+          <li>Fixed-income arbitrage & repo financing</li>
+          <li>Quantitative trading strategy development</li>
+          <li>Risk management & market microstructure analysis</li>
+        </ul>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    © 2025 Viren Ghaghada | Portfolio powered by GitHub Pages
+  </footer>
 </body>
 </html>
